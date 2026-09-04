@@ -1,0 +1,43 @@
+/* property section  */
+  .property{
+    padding-block-start: 100px;
+  }
+  
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 16px;
+  }
+
+.view-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 30px;
+  margin-block-end: -20px;
+}
+
+.property-list{
+  margin-block-end: 20px;
+}
+
+.viewall-property{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.property .container .viewall-property{
+  display: none;
+}
+
+.property .container .viewall-property.active{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+
+.view-btn viewall{
+  display: none;
+}

@@ -1,0 +1,57 @@
+/* FAQS section  */
+
+.FAQs{
+    padding-block-start: 100px;
+  }
+  
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 16px;
+    margin-block-end: 20px;
+  }
+
+
+.FAQs .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.FAQs .box-container .box{
+  flex: 1 1 40rem;
+  box-shadow: var(--shadow-1);
+}
+
+.FAQs .box-container .box h3{
+  padding: 1.5rem 2rem;
+  background-color: var(--primary-40);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 20px 0 0 0 ;
+}
+
+.FAQs .box-container .box h3 .material-symbols-rounded{
+  cursor: pointer;
+}
+
+.FAQs .box-container .box p{
+  color: var(--neutral-40);
+  background-color: var(--white);
+  padding: 1.5rem 2rem;
+  line-height: 1.5;
+  display: none;
+}
+
+.FAQs .box-container .box.active p{
+  display: block;
+}
+
+.FAQs .box-container .box.active h3{
+  background-color: var(--primary-90);
+}

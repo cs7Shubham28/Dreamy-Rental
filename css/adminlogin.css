@@ -1,0 +1,74 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: var(--gradient); */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: var(--radius-medium);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container .form h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+}
+
+.form-container .form h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--neutral-60);
+}
+
+.form .form-content input{
+    width: 100%;
+    border: none;
+    padding: 1.4rem;
+    color: var(--primary-20);
+    font-size: 1.8rem;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-1);
+    padding-inline: 45px;
+  }
+
+  .form .form-content{
+    margin: 1.8rem 0rem;
+    display: flex;
+    position: relative;
+  }
+  
+    .form .form-content .loginicon{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+  }
+
+  
+.form .form-content input:where(:active, :focus-visible){
+    border-bottom: 2px solid var(--primary-70);
+  }
+  
+ .form .form-content input:where(:active, :focus) ~ .loginicon{
+    color: var(--primary-80);
+  }

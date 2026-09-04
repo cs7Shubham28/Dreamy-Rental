@@ -1,0 +1,149 @@
+
+
+.property-form form{
+    margin-block-start: 20px;
+    background-color: var(--white);
+    box-shadow: var(--shadow-1);
+    border-radius: var(--radius-medium);
+    padding: 2rem;
+}
+
+.property-form form h3{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-20);
+    text-transform: capitalize;
+}
+
+
+.property-form form .checkbox,
+.property-form form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.property-form form .box{
+    flex: 1 1 40rem;
+}
+
+.property-form form .input{
+    width: 100%;
+    width: 100%;
+    border: none;
+    padding: 1.4rem;
+    margin: 1rem 0;
+    color: var(--primary-20);
+    font-size: 1.8rem;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-1);
+}
+
+.property-form form .input:where(:focus-visible){
+    border-bottom: 2px solid var(--primary-70)
+}
+
+.property-form form p{
+    padding-block-start: 1rem;
+    font-size: 1.6rem;
+    color: var(--neutral-20);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.property-form form p span{
+    display: inline;
+    color: var(--error-100);
+}
+
+
+.property-form form .checkbox{
+    padding-bottom: 1rem;
+}
+
+
+.property-form form .checkbox ,.checkbox-wrapper-21 .control{
+    font-size: 1.6rem;
+    color: var(--neutral-20);
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+
+
+  .checkbox-wrapper-21 .control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-21 .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .checkbox-wrapper-21 .control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+  }
+  .checkbox-wrapper-21 .control:hover input ~ .control__indicator,
+  .checkbox-wrapper-21 .control input:focus ~ .control__indicator {
+    background: #ccc;
+  }
+  .checkbox-wrapper-21 .control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+  }
+  .checkbox-wrapper-21 .control:hover input:not([disabled]):checked ~ .control__indicator,
+  .checkbox-wrapper-21 .control input:checked:focus ~ .control__indicator {
+    background: #0e647d;
+  }
+  .checkbox-wrapper-21 .control input:disabled ~ .control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .checkbox-wrapper-21 .control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  .checkbox-wrapper-21 .control input:checked ~ .control__indicator:after {
+    display: block;
+  }
+  .checkbox-wrapper-21 .control--checkbox .control__indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .checkbox-wrapper-21 .control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+  }
+
+  form .fileupload::file-selector-button{
+    padding: 1rem;
+    border-radius: var(--radius-medium);
+    transition: var(--transition-duration-smooth) var(--transition-easing-quick);
+    background-color: var(--primary-100);
+    color: var(--neutral-100);
+    border: none;
+  }
+
+  form .fileupload::file-selector-button:where(:hover, :focus){
+    background-color: var(--primary-80);
+    box-shadow: var(--shadow-2);
+  }
+
+  form .fileupload::file-selector-button:where(:active, :focus-visible){
+    background-color: var(--primary-80);
+  }

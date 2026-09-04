@@ -1,0 +1,118 @@
+
+
+  /* about us section  */
+  .aboutus{
+    padding-block-start: 100px;
+  }
+  
+  .aboutus .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+  }
+
+  .aboutus .row .video-holder{
+    flex: 1 1 300rem;
+    position: relative;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 16px;
+  }
+
+  .about-content .about-text{
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+
+  .video-holder video{
+    width: 100%;
+    border: 1.5rem solid var(--white);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-3);
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .aboutus .row .video-holder h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #333;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+    font-weight: bold;
+  }
+  
+  /* step section  */
+.heading{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-block-start: 20px;
+}
+
+.steps{
+  margin-block-end: -40px;
+}
+
+.steps .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.steps .box-container .boxes{
+  background-color: var(--white);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-3);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-medium);
+}
+
+.steps .box-container .boxes img{
+  height: 7rem;
+  margin-block-start: .5rem;
+  object-fit: contain;
+}
+
+
+.steps .box-container .boxes .info{
+  margin-block-start: 16px;
+}
+
+
+  @media (min-width: 768px){
+    .aboutus .row{
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 992px){
+    .aboutus .row{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .aboutus .row{
+      flex-direction: row !important;
+    }
+  }
